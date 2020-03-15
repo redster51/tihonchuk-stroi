@@ -1,1 +1,40 @@
-<p>admin works!</p>
+<header class="header">
+    <h1 class="logo">stroim vse</h1>
+</header>
+
+<div class="container">
+    <div class="title">
+        <h1>Загрузка нового проекта</h1>
+    </div>
+    <div class="name">
+        Название проекта: <input>
+    </div>
+
+    <div class="description">
+        Описание проекта: <input>
+    </div>
+
+    <div class="data">
+        Дата постройки проекта: <input type="date">
+    </div>
+    <div id="drop-area">
+        <form class="my-form">
+          <p>Перетащите фото проекта для загрузки</p>
+          <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+          <label class="button" for="fileElem">Выберите файл</label>
+        </form>
+        <progress id="progress-bar" max=100 value=0></progress>
+        <div id="gallery"></div>
+      </div>
+    <div>
+
+    </div>
+
+    <div>
+        <button>
+            Сохранить
+        </button>
+    </div>
+    
+</div>
+<script src="drag_and_drop.js"></script>
