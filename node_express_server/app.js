@@ -3,9 +3,9 @@ const express = require('express'),
     configDB = require('./database/dataBase')
 
 mongoose.Promise = global.Promise;
-mongoose.connect(configDB.dataBase, {useNewUrlParser: true}).then( 
+mongoose.connect(configDB.dataBase, {useNewUrlParser: true, useUnifiedTopology: true}).then( 
     () => {console.log('DataBase is connected')},
-    (err) => {console.log('Database connection error...' + err)});
+    (err) => {console.log('Database connection error...\n' + err)});
 
 const app = express();
 const host = '127.0.1.1';
