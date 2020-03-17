@@ -1,0 +1,26 @@
+{
+  "name": "tihonchuk-stroi",
+  "version": "1.0.0",
+  "description": "First try to develop real web application.",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redster51/tihonchuk-stroi.git"
+  },
+  "author": "Pouh Ilya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redster51/tihonchuk-stroi/issues"
+  },
+  "homepage": "https://github.com/redster51/tihonchuk-stroi#readme"
+}
